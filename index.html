@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شطرنج خارق - بقلم خالد @fmpiy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap');
+        h1, h2, button {
+            font-family: 'Tajawal', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>شطرنج خارق</h1>
+            <h2>تم تطوير هذه اللعبة والموقع من قبل خالد insta @fmpiy</h2>
+            <h3 class="strength">قوة المحرك: لا تُهزم (الحد الأقصى)</h3>
+        </header>
+        
+        <div class="game-container">
+            <div class="chess-board" id="board"></div>
+            
+            <div class="controls">
+                <button id="iGoFirst">أنا الأول</button>
+                <button id="undoMove">تراجع عن الحركة</button>
+                <button id="newGame">لعبة جديدة</button>
+                <button id="analyze">حلل الوضعية</button>
+                <div class="status" id="status">جاهز للعب!</div>
+                <div class="eval" id="eval">تقييم: 0.00</div>
+            </div>
+            
+            <div class="instructions" id="instructions">
+                <h3>كيفية اللعب:</h3>
+                <ol>
+                    <li>ارسم تحركات خصمك بالنقر على القطعة ثم المربع الهدف</li>
+                    <li>سأخبرك كيف تتحرك للفوز!</li>
+                    <li>اضغط "أنا الأول" إذا كنت تريد أن تبدأ اللعب</li>
+                    <li>اضغط "حلل الوضعية" للحصول على أفضل حركة</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stockfish.js/10.0.2/stockfish.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
